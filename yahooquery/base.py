@@ -681,7 +681,7 @@ class _YahooFinance(object):
                         "max",
                     ],
                 },
-                "events": {"required": False, "default": "div,split"},
+                "events": {"required": False, "default": "div,split,capitalGains"},
                 "numberOfPoints": {"required": False, "default": None},
                 "formatted": {"required": False, "default": False},
             },
