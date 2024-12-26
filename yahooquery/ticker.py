@@ -1335,6 +1335,8 @@ class Ticker(_YahooFinance):
             if "splits" in df.columns:
                 # df["splits"].fillna(0, inplace=True)
                 df.fillna({"splits": 0}, inplace=True)
+            if "capitalGains" in df.columns:
+                df.fillna({"capitalGains": 0}, inplace=True)
         return df
 
     def _adjust_ohlc(self, df):
